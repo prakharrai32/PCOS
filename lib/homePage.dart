@@ -3,6 +3,7 @@ import 'package:capstone/periodTracker.dart';
 import 'package:capstone/selfDiagnosis.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:capstone/gynohelp.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -268,7 +269,7 @@ class _HomePage extends State<HomePage> {
     return InkWell(
         onTap: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => PeriodTracker()));
+              context, MaterialPageRoute(builder: (context) => GynoHelp()));
         },
 
         child: Container(
